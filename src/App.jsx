@@ -1,14 +1,16 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-import "./App.css";
-
-const router = createBrowserRouter([
-  { path: "/", element: <div>Root</div> },
-  { path: "*", element: <div>Not Found</div> },
-]);
-
-function App() {
-  return <RouterProvider router={router} />;
-}
+const App = () => {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <div>Navbar</div>
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+      <div>Footer</div>
+    </div>
+  );
+};
 
 export default App;

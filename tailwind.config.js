@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["index.html", "src/**/*.jsx"],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       screens: {
@@ -9,5 +9,5 @@ export default {
     },
     container: { center: true },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
