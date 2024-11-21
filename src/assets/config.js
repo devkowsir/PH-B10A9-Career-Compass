@@ -13,6 +13,7 @@ import careerPlanning from "./images/career-planning-workshops.jpg";
 import groupCounseling from "./images/group-counseling.jpg";
 import mockInterviews from "./images/mock-interviews.jpg";
 import resumeReview from "./images/resume-review.jpg";
+import provenTrackRecord from "./images/proven-track-record.png";
 import skillAssessments from "./images/skill-assessments.jpg";
 import slider1 from "./images/slider-1.jpg";
 import slider2 from "./images/slider-2.jpg";
@@ -23,7 +24,7 @@ export const SiteSlogan = "Navigate Your Path, Empower Your Future";
 
 export const BannerSection = {
   heading: "Discover Your Dream Career Today",
-  description: "Personalized guidance for a brighter professional future.",
+  subHeading: "Personalized guidance for a brighter professional future.",
   slides: [
     { caption: "Expert Advice, Anytime.", image: slider1 },
     { caption: "Plan Your Path with Precision.", image: slider2 },
@@ -31,8 +32,53 @@ export const BannerSection = {
   ],
 };
 
+export const WhyChooseUsSection = {
+  heading: "Why Choose CareerCompass?",
+  subHeading: "Empowering Your Career with Expert Guidance and Proven Results",
+  content: [
+    {
+      feature: "Expert Counselors",
+      description:
+        "Our team of certified professionals brings years of experience and expertise to guide you toward the right career path.",
+      icon: groupDiscussion,
+    },
+    {
+      feature: "Personalized Services",
+      description:
+        "We understand that every individual is unique. That’s why our services are tailored to fit your specific goals and aspirations.",
+      icon: uniqueVisitor,
+    },
+    {
+      feature: "High Satisfaction Rates",
+      description:
+        "With a 95% satisfaction rate, we’ve helped thousands of users achieve their career dreams and they have also recommended hundred others.",
+      icon: customerSatisfaction,
+    },
+    {
+      feature: "Flexible Scheduling",
+      description:
+        "Access online and offline sessions that work with your schedule. Our clients consistently achieve their goals with our guidance.",
+      icon: clock,
+    },
+    {
+      feature: "Affordable Pricing",
+      description:
+        "Quality career guidance at prices that won’t break the bank. Our clients consistently achieve their goals with our guidance.",
+      icon: lowPrice,
+    },
+    {
+      feature: "Proven Track Record",
+      description:
+        "With a track record of thousands of successful career transformations, CareerCompass is a trusted name in career counseling.",
+      icon: provenTrackRecord,
+    },
+  ],
+  image: whyChooseUs,
+};
+
 export const ServicesSection = {
   heading: "Our Services",
+  subHeading: "Tailored Solutions to Help You Succeed at Every Step of Your Career",
   description: "Explore a range of personalized career counseling services designed to help you succeed.",
   cards: [
     {
@@ -110,42 +156,9 @@ export const ServicesSection = {
   ],
 };
 
-export const WhyChooseUsSection = {
-  headline: "Why Choose CareerCompass?",
-  content: [
-    {
-      feature: "Expert Counselors",
-      description:
-        "Our team of certified professionals brings years of experience and expertise to guide you toward the right career path.",
-      icon: groupDiscussion,
-    },
-    {
-      feature: "Personalized Services",
-      description:
-        "We understand that every individual is unique. That’s why our services are tailored to fit your specific goals and aspirations.",
-      icon: uniqueVisitor,
-    },
-    {
-      feature: "High Satisfaction Rates",
-      description: "With a 95% satisfaction rate, we’ve helped thousands of users achieve their career dreams.",
-      icon: customerSatisfaction,
-    },
-    {
-      feature: "Flexible Scheduling",
-      description: "Access online and offline sessions that work with your schedule.",
-      icon: clock,
-    },
-    {
-      feature: "Affordable Pricing",
-      description: "Quality career guidance at prices that won’t break the bank.",
-      icon: lowPrice,
-    },
-  ],
-  image: whyChooseUs,
-};
-
 export const TestimonialsSection = {
-  headline: "What Our Clients Say",
+  heading: "What Our Clients Say",
+  subHeading: "Real Stories of Success from Our Satisfied Clients",
   testimonials: [
     {
       quote:

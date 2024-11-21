@@ -47,7 +47,7 @@ const Banner = () => {
         <h1 className="text-2xl font-bold text-base-100 sm:text-3xl md:text-4xl lg:text-5xl">
           {BannerSection.heading}
         </h1>
-        <p className="text-base-300/75">{BannerSection.description}</p>
+        <p className="text-base-300/75">{BannerSection.subHeading}</p>
         <Link to={"/register"} className="btn btn-primary mt-4 sm:btn-lg">
           Get Started
         </Link>
