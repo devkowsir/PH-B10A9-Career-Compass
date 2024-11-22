@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ServicesSection } from "../assets/config";
-import { Rating } from "./Rating";
+import { Rating } from "../../../components/Rating";
+import { ServicesSection } from "../config";
 
 const Services = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { WhyChooseUsSection } from "../assets/config";
+import { WhyChooseUsSection } from "../config";
 
 const WhyChooseUs = () => {
   return (

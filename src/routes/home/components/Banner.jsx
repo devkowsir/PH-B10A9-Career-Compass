@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BannerSection } from "../assets/config";
+import { BannerSection } from "../config";
 
 const slides = BannerSection.slides;
 const slideCount = slides.length;

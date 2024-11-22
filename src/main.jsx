@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
-import HomeRoute from "./routes/HomeRoute.jsx";
+import HomeRoute from "./routes/home";
 
 import "./index.css";
 

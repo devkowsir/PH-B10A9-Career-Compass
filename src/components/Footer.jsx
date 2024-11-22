@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa6";
-import { ServicesSection } from "../assets/config";
+import { ServiceLinks } from "../config";
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
         </aside>
         <nav>
           <h6 className="footer-title">Services</h6>
-          {ServicesSection.cards.map(({ slug, shortName }) => (
+          {ServiceLinks.map(({ slug, shortName }) => (
             <a className="link link-hover" href={`/services/${slug}`} key={slug}>
               {shortName}
             </a>

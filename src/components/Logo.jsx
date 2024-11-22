@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SiteSlogan } from "../assets/config";
+import { SiteSlogan } from "../config";
 
 const Logo = ({ className }) => {
   return (

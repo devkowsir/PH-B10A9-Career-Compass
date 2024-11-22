@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { ServicesSection } from "../assets/config";
+import { ServiceLinks } from "../config";
 import Logo from "./Logo";
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
             <li className="dropdown dropdown-hover">
               <a href={"/#services"}>Services</a>
               <ul className="dropdown-content menu z-[2] p-2 ml-0 *:w-max bg-base-100 rounded-box shadow">
-                {ServicesSection.cards.map(({ slug, shortName }) => (
+                {ServiceLinks.map(({ slug, shortName }) => (
                   <li key={slug}>
                     <Link to={`/services/${slug}`}>{shortName}</Link>
                   </li>
@@ -40,7 +40,7 @@ const Navbar = () => {
               <li>
                 <Link to={"/#services"}>Services</Link>
                 <ul className="menu menu-sm pt-0 w-max before:top-1">
-                  {ServicesSection.cards.map(({ slug, shortName }) => (
+                  {ServiceLinks.map(({ slug, shortName }) => (
                     <li key={slug}>
                       <Link to={`/services/${slug}`}>{shortName}</Link>
                     </li>
