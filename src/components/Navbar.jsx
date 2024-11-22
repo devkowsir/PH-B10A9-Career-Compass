@@ -17,7 +17,7 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="dropdown dropdown-hover">
-              <Link to={"/#services"}>Services</Link>
+              <a href={"/#services"}>Services</a>
               <ul className="dropdown-content menu z-[2] p-2 ml-0 *:w-max bg-base-100 rounded-box shadow">
                 {ServicesSection.cards.map(({ slug, shortName }) => (
                   <li key={slug}>

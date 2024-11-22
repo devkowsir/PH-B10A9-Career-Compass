@@ -5,7 +5,7 @@ import { Rating } from "./Rating";
 
 const Services = () => {
   return (
-    <section className="container flex flex-col px-4 pb-24 bg-base-100 text-base-content/75">
+    <section id="services" className="container flex flex-col px-4 pb-24 bg-base-100 text-base-content/75">
       {/* Right Side: Features */}
       <div className="w-full mt-8">
         <h2 className="text-4xl font-bold text-center mb-6">{ServicesSection.heading}</h2>
