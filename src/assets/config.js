@@ -95,7 +95,7 @@ export const ServicesSection = {
     },
     {
       slug: "resume-review",
-      image: careerPlanning,
+      image: resumeReview,
       serviceName: "Resume Reviews",
       shortName: "Resume Review",
       category: "Online",
@@ -107,7 +107,7 @@ export const ServicesSection = {
     },
     {
       slug: "mock-interviews",
-      image: groupCounseling,
+      image: mockInterviews,
       serviceName: "Mock Interviews",
       shortName: "Mock Interviews",
       category: "Group",
@@ -119,7 +119,7 @@ export const ServicesSection = {
     },
     {
       slug: "career-planning-workshops",
-      image: mockInterviews,
+      image: careerPlanning,
       serviceName: "Career Planning Workshops",
       shortName: "Career Planning",
       category: "Offline",
@@ -131,7 +131,7 @@ export const ServicesSection = {
     },
     {
       slug: "skill-assessments",
-      image: resumeReview,
+      image: skillAssessments,
       serviceName: "Skill Assessment Tests",
       shortName: "Skill Assesment",
       category: "Online",
@@ -143,7 +143,7 @@ export const ServicesSection = {
     },
     {
       slug: "group-counseling",
-      image: skillAssessments,
+      image: groupCounseling,
       serviceName: "Group Counseling Sessions",
       shortName: "Group Counselling",
       category: "Offline",

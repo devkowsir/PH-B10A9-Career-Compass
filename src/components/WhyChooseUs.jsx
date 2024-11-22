@@ -3,7 +3,7 @@ import { WhyChooseUsSection } from "../assets/config";
 
 const WhyChooseUs = () => {
   return (
-    <section className="container flex flex-col px-4 py-24 bg-base-100">
+    <section className="container flex flex-col px-4 py-24 bg-base-100 text-base-content/75">
       {/* Left Side: Image */}
       <div className="mx-auto max-w-screen-lg sm:px-12">
         <img src={WhyChooseUsSection.image} alt="Why Choose Us" className="w-full object-cover rounded-lg shadow-lg" />

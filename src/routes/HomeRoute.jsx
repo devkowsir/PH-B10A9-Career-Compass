@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
+import Services from "../components/Services";
 import WhyChooseUs from "../components/WhyChooseUs";
 
 const HomeRoute = () => {
@@ -7,6 +8,7 @@ const HomeRoute = () => {
     <div>
       <Banner />
       <WhyChooseUs />
+      <Services />
     </div>
   );
 };
