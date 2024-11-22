@@ -181,3 +181,57 @@ export const TestimonialsSection = {
   ],
   image: testimonials,
 };
+
+export const FAQsSection = {
+  heading: "Frequently Asked Questions",
+  subHeading: "Answers to common questions about our services.",
+  faqs: [
+    {
+      question: "What services does CareerCompass offer?",
+      answer:
+        "CareerCompass provides career counseling, resume reviews, mock interviews, career planning workshops, and skill assessment tests tailored to your professional needs.",
+    },
+    {
+      question: "Are the sessions conducted online or offline?",
+      answer: "We offer both online and offline services. The availability depends on the specific service you choose.",
+    },
+    {
+      question: "How do I book a service?",
+      answer:
+        "You can book a service directly through our website. Visit the service page, select your desired time slot, and confirm your booking.",
+    },
+    {
+      question: "Can I reschedule a booked session?",
+      answer: "Yes, you can reschedule a session by contacting us at least 24 hours before the scheduled time.",
+    },
+    {
+      question: "Do you offer group counseling sessions?",
+      answer: "Yes, we provide group counseling sessions for collaborative learning and shared experiences.",
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer:
+        "We accept payments via credit/debit cards, PayPal, and direct bank transfers. All transactions are secure.",
+    },
+    {
+      question: "Can I get a refund if I cancel my session?",
+      answer:
+        "Refunds are available for cancellations made at least 48 hours before the session. Refund policies vary by service.",
+    },
+    {
+      question: "Are the counselors certified professionals?",
+      answer:
+        "Yes, all our counselors are certified and have extensive experience in career guidance and professional development.",
+    },
+    {
+      question: "What industries do your services cater to?",
+      answer:
+        "Our services cater to a wide range of industries, including technology, healthcare, finance, education, and more.",
+    },
+    {
+      question: "Can I take multiple services simultaneously?",
+      answer:
+        "Yes, you can book and participate in multiple services at the same time, depending on your schedule and availability.",
+    },
+  ],
+};
