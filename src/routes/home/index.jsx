@@ -7,13 +7,13 @@ import FAQs from "./components/FAQs";
 
 const HomeRoute = () => {
   return (
-    <div>
+    <>
       <Banner />
       <WhyChooseUs />
       <Services />
       <Testimonials />
       <FAQs />
-    </div>
+    </>
   );
 };
 

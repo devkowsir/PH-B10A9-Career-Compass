@@ -31,12 +31,12 @@ const Banner = () => {
           ></img>
         ))}
       </div>
-      <div className="container h-full px-4 flex flex-col gap-2 justify-center items-center text-center">
+      <div className="container h-full flex flex-col gap-2 justify-center items-center text-center">
         <div className="shrink-0 relative w-full h-10 text-lg text-base-100 font-bold">
           {slides.map(({ caption }, i) => (
             <h2
               key={i}
-              className={`absolute w-full transition-opacity duration-300 text-accent ${
+              className={`absolute w-full transition-opacity duration-300 text-accent select-none ${
                 i == currentSlide ? "opacity-100" : "opacity-0"
               }`}
             >

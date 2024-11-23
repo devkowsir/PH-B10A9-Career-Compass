@@ -7,7 +7,7 @@ export default {
         xs: "480px",
       },
     },
-    container: { center: true },
+    container: { center: true, padding: "1rem" },
   },
   plugins: [require("daisyui")],
 };

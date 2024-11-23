@@ -13,7 +13,7 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">Services</h6>
           {ServiceLinks.map(({ slug, shortName }) => (
-            <a className="link link-hover" href={`/services/${slug}`} key={slug}>
+            <a className="link link-hover" href={`/service/${slug}`} key={slug}>
               {shortName}
             </a>
           ))}
@@ -28,6 +28,9 @@ const Footer = () => {
           </a>
           <a className="link link-hover" href={"/#testimonials"}>
             Testimonials
+          </a>
+          <a className="link link-hover" href={"/#faqs"}>
+            FAQs
           </a>
         </nav>
         <nav>
