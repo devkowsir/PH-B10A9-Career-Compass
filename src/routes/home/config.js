@@ -1,19 +1,19 @@
-import clock from "../../assets/images/clock.png";
-import customerSatisfaction from "../../assets/images/customer-satisfaction.png";
-import groupDiscussion from "../../assets/images/group-discussion.png";
-import lowPrice from "../../assets/images/low-price.png";
+import clock from "../../assets/images/clock-icon.png";
+import customerSatisfaction from "../../assets/images/customer-satisfaction-icon.png";
+import groupDiscussion from "../../assets/images/group-discussion-icon.png";
+import lowPrice from "../../assets/images/low-price-icon.png";
 import testimonial1 from "../../assets/images/testimonial-1.jpg";
 import testimonial2 from "../../assets/images/testimonial-2.jpg";
 import testimonial3 from "../../assets/images/testimonial-3.jpg";
 import testimonials from "../../assets/images/testimonials.jpg";
-import uniqueVisitor from "../../assets/images/unique-visitor.png";
+import uniqueVisitor from "../../assets/images/unique-visitor-icon.png";
 import whyChooseUs from "../../assets/images/why-choose-us.jpg";
 import careerCounseling from "../../assets/images/career-counseling.jpg";
 import careerPlanning from "../../assets/images/career-planning-workshops.jpg";
 import groupCounseling from "../../assets/images/group-counseling.jpg";
 import mockInterviews from "../../assets/images/mock-interviews.jpg";
 import resumeReview from "../../assets/images/resume-review.jpg";
-import provenTrackRecord from "../../assets/images/proven-track-record.png";
+import provenTrackRecord from "../../assets/images/proven-track-record-icon.png";
 import skillAssessments from "../../assets/images/skill-assessments.jpg";
 import slider1 from "../../assets/images/slider-1.jpg";
 import slider2 from "../../assets/images/slider-2.jpg";
@@ -26,8 +26,8 @@ export const BannerSection = {
   heading: "Discover Your Dream Career Today",
   subHeading: "Personalized guidance for a brighter professional future.",
   slides: [
-    { caption: "Expert Advice, Anytime.", image: slider1 },
-    { caption: "Plan Your Path with Precision.", image: slider2 },
+    { caption: "Plan Your Path with Precision.", image: slider1 },
+    { caption: "Expert Advice, Anytime.", image: slider2 },
     { caption: "Turn Your Goals into Achievements.", image: slider3 },
   ],
 };
