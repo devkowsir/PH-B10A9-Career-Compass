@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import KeyFeatures from "./components/KeyFeatures";
 import Overview from "./components/Overview";
 import Pricing from "./components/Pricing";
+import Testimonials from "./components/Testimonial";
 import { Services } from "./config";
 
 const ServiceRoute = () => {
@@ -20,6 +21,7 @@ const ServiceRoute = () => {
       <KeyFeatures {...ServiceData.keyFeaturesSection} />
       <Pricing {...ServiceData.pricingSection} />
       <Counselor {...ServiceData.counselorSection} />
+      <Testimonials {...ServiceData.testimonialsSection} />
     </>
   );
 };

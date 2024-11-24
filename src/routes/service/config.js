@@ -7,6 +7,9 @@ import skillAssessments from "../../assets/images/skill-assessments.jpg";
 import counselor_1 from "../../assets/images/counselor-1.jpg";
 import counselor_2 from "../../assets/images/counselor-2.jpg";
 import counselor_3 from "../../assets/images/counselor-3.jpg";
+import testimonial_1 from "../../assets/images/testimonial-1.jpg";
+import testimonial_2 from "../../assets/images/testimonial-2.jpg";
+import testimonial_3 from "../../assets/images/testimonial-3.jpg";
 
 import analysisIcon from "../../assets/images/analysis-icon.png";
 import assessmentIcon from "../../assets/images/assesment-icon.png";
@@ -114,17 +117,17 @@ export const Services = [
         {
           quote: "Dr. Sarah Lee helped me discover my true potential and land my dream job.",
           user: "Emily R., Software Engineer",
-          image: "testimonial-1.jpg",
+          image: testimonial_1,
         },
         {
           quote: "The one-on-one sessions gave me the clarity I needed to pivot my career successfully.",
           user: "John P., Marketing Specialist",
-          image: "testimonial-2.jpg",
+          image: testimonial_2,
         },
         {
           quote: "Her guidance was instrumental in helping me choose the right career path.",
           user: "Sarah M., Data Analyst",
-          image: "testimonial-3.jpg",
+          image: testimonial_3,
         },
       ],
     },
@@ -221,17 +224,17 @@ export const Services = [
         {
           quote: "My resume got noticed by multiple recruiters after the review!",
           user: "David K., Data Scientist",
-          image: "testimonial-1.jpg",
+          image: testimonial_1,
         },
         {
           quote: "John’s feedback helped me align my resume with the job description perfectly.",
           user: "Anna L., Marketing Specialist",
-          image: "testimonial-2.jpg",
+          image: testimonial_2,
         },
         {
           quote: "I never knew how much of a difference ATS optimization could make!",
           user: "Sophia W., Financial Analyst",
-          image: "testimonial-3.jpg",
+          image: testimonial_3,
         },
       ],
     },
@@ -329,18 +332,18 @@ export const Services = [
           quote:
             "The mock interview gave me the confidence I needed to perform well in my actual interview. Jane’s feedback was incredibly helpful.",
           user: "Mark T., Software Developer",
-          image: "testimonial-1.jpg",
+          image: testimonial_1,
         },
         {
           quote:
             "I landed my dream job after attending the mock interview sessions. The tips I received were game-changing.",
           user: "Laura H., Data Scientist",
-          image: "testimonial-2.jpg",
+          image: testimonial_2,
         },
         {
           quote: "The realistic scenarios helped me manage my nerves and prepare thoughtful answers.",
           user: "Chris P., Project Manager",
-          image: "testimonial-3.jpg",
+          image: testimonial_3,
         },
       ],
     },
@@ -438,19 +441,19 @@ export const Services = [
           quote:
             "The workshop helped me set clear goals and gave me the tools to achieve them. Emily’s expertise was invaluable.",
           user: "Alex J., Business Analyst",
-          image: "testimonial-1.jpg",
+          image: testimonial_1,
         },
         {
           quote:
             "Collaborating with others in the session opened up new perspectives for my career journey. Highly recommended!",
           user: "Rachel P., Marketing Manager",
-          image: "testimonial-2.jpg",
+          image: testimonial_2,
         },
         {
           quote:
             "I walked away with a solid career plan and the confidence to follow it. The interactive activities were fantastic.",
           user: "Jason L., UX Designer",
-          image: "testimonial-3.jpg",
+          image: testimonial_3,
         },
       ],
     },
@@ -548,19 +551,19 @@ export const Services = [
           quote:
             "The skill assessment gave me a clear idea of where I stand and what I need to improve. The report was incredibly detailed.",
           user: "Olivia R., Software Engineer",
-          image: "testimonial-1.jpg",
+          image: testimonial_1,
         },
         {
           quote:
             "I loved how the results came with actionable recommendations tailored to my goals. Highly recommended!",
           user: "Ethan M., Data Analyst",
-          image: "testimonial-2.jpg",
+          image: testimonial_2,
         },
         {
           quote:
             "The test was comprehensive yet straightforward. It helped me focus on the areas that matter most for my career growth.",
           user: "Sophia T., Marketing Specialist",
-          image: "testimonial-3.jpg",
+          image: testimonial_3,
         },
       ],
     },
@@ -658,19 +661,19 @@ export const Services = [
           quote:
             "The group session helped me see new career possibilities I hadn't considered before. It was an eye-opening experience.",
           user: "Mason L., Web Developer",
-          image: "testimonial-1.jpg",
+          image: testimonial_1,
         },
         {
           quote:
             "Sharing ideas with others and receiving guidance from Anna was truly inspiring. The session was both informative and motivating.",
           user: "Liam S., Product Manager",
-          image: "testimonial-2.jpg",
+          image: testimonial_2,
         },
         {
           quote:
             "I loved the collaborative nature of the session. It was reassuring to know others were facing similar challenges.",
           user: "Emma W., Graphic Designer",
-          image: "testimonial-3.jpg",
+          image: testimonial_3,
         },
       ],
     },
