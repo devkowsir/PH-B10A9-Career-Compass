@@ -67,12 +67,34 @@ export const Services = [
         },
       ],
     },
-    pricingAndDurationSection: {
+    pricingSection: {
       heading: "Pricing & Duration",
       subHeading: "Flexible scheduling at affordable pricing.",
-      pricing: "$50 per session",
-      duration: "1-hour session",
-      additionalDetails: "Available for online scheduling.",
+      basePrice: 50,
+      baseDuration: "1-hour online session",
+      availability: "Weekdays and Weekends",
+      customizationOptions: [
+        {
+          name: "Additional Duration",
+          description: "Extend the session by 30 minutes",
+          priceAdjustment: 20,
+          enabled: false,
+        },
+        {
+          name: "Follow-Up Session",
+          description: "Schedule a follow-up counseling session",
+          priceAdjustment: 40,
+          enabled: false,
+        },
+        {
+          name: "Priority Scheduling",
+          description: "Book a session at your preferred time",
+          priceAdjustment: 10,
+          enabled: false,
+        },
+      ],
+      cta: "Book This Service",
+      link: "/book/career-counseling",
     },
     counselorSection: {
       heading: "Meet Your Counselor",
@@ -152,12 +174,34 @@ export const Services = [
         },
       ],
     },
-    pricingAndDurationSection: {
+    pricingSection: {
       heading: "Pricing & Duration",
       subHeading: "Affordable and flexible feedback sessions.",
-      pricing: "$20 per review",
-      duration: "Flexible, 1-hour feedback session",
-      additionalDetails: "Submit your resume and get feedback within 48 hours.",
+      basePrice: 20,
+      baseDuration: "Flexible, 1-hour feedback session",
+      availability: "Anytime",
+      customizationOptions: [
+        {
+          name: "Express Review",
+          description: "Get your resume reviewed within 24 hours",
+          priceAdjustment: 15,
+          enabled: false,
+        },
+        {
+          name: "Cover Letter Review",
+          description: "Add a cover letter review to your session",
+          priceAdjustment: 10,
+          enabled: false,
+        },
+        {
+          name: "Industry-Specific Optimization",
+          description: "Tailor your resume for a specific industry",
+          priceAdjustment: 20,
+          enabled: false,
+        },
+      ],
+      cta: "Book This Service",
+      link: "/book/resume-review",
     },
     counselorSection: {
       heading: "Meet Your Expert",
@@ -237,12 +281,34 @@ export const Services = [
         },
       ],
     },
-    pricingAndDurationSection: {
+    pricingSection: {
       heading: "Pricing & Duration",
       subHeading: "Affordable practice sessions for guaranteed improvement.",
-      pricing: "$100 per session",
-      duration: "2-hour session",
-      additionalDetails: "Includes a 30-minute feedback session after the mock interview.",
+      basePrice: 100,
+      baseDuration: "2-hour group or 1-hour one-on-one session",
+      availability: "Weekdays and Weekends",
+      customizationOptions: [
+        {
+          name: "One-on-One Mock Interview",
+          description: "Upgrade to a personalized one-on-one session",
+          priceAdjustment: 50,
+          enabled: false,
+        },
+        {
+          name: "Session Recording",
+          description: "Receive a video recording of your session",
+          priceAdjustment: 20,
+          enabled: false,
+        },
+        {
+          name: "Follow-Up Feedback",
+          description: "Get additional feedback after the session",
+          priceAdjustment: 25,
+          enabled: false,
+        },
+      ],
+      cta: "Book This Service",
+      link: "/book/mock-interviews",
     },
     counselorSection: {
       heading: "Meet Your Interview Coach",
@@ -324,12 +390,34 @@ export const Services = [
         },
       ],
     },
-    pricingAndDurationSection: {
+    pricingSection: {
       heading: "Pricing & Duration",
       subHeading: "Plan your career in a single session.",
-      pricing: "$80 per workshop",
-      duration: "3-hour interactive workshop",
-      additionalDetails: "Includes all materials and a post-session Q&A with experts.",
+      basePrice: 80,
+      baseDuration: "3-hour interactive workshop",
+      availability: "Scheduled dates only",
+      customizationOptions: [
+        {
+          name: "Workshop Materials",
+          description: "Get printed materials and resources",
+          priceAdjustment: 10,
+          enabled: false,
+        },
+        {
+          name: "Post-Workshop Support",
+          description: "Receive 2 follow-up sessions with an expert",
+          priceAdjustment: 50,
+          enabled: false,
+        },
+        {
+          name: "Networking Session",
+          description: "Join an exclusive networking session post-workshop",
+          priceAdjustment: 30,
+          enabled: false,
+        },
+      ],
+      cta: "Book This Service",
+      link: "/book/career-planning-workshops",
     },
     counselorSection: {
       heading: "Meet Your Workshop Leader",
@@ -412,12 +500,34 @@ export const Services = [
         },
       ],
     },
-    pricingAndDurationSection: {
+    pricingSection: {
       heading: "Pricing & Duration",
       subHeading: "Affordable assessments with flexible scheduling.",
-      pricing: "$30 per test",
-      duration: "45-minute online test",
-      additionalDetails: "Results are delivered within 24 hours along with expert recommendations.",
+      basePrice: 30,
+      baseDuration: "30-minute test with instant results",
+      availability: "Available Anytime",
+      customizationOptions: [
+        {
+          name: "Detailed Report",
+          description: "Get a comprehensive skill analysis report",
+          priceAdjustment: 15,
+          enabled: false,
+        },
+        {
+          name: "Skill Improvement Plan",
+          description: "Receive personalized recommendations",
+          priceAdjustment: 25,
+          enabled: false,
+        },
+        {
+          name: "Live Assessment Feedback",
+          description: "One-on-one live feedback session",
+          priceAdjustment: 20,
+          enabled: false,
+        },
+      ],
+      cta: "Take the Test",
+      link: "/book/skill-assessments",
     },
     counselorSection: {
       heading: "Meet Your Assessment Guide",
@@ -500,12 +610,34 @@ export const Services = [
         },
       ],
     },
-    pricingAndDurationSection: {
+    pricingSection: {
       heading: "Pricing & Duration",
       subHeading: "Affordable group sessions tailored for your success.",
-      pricing: "$60 per session",
-      duration: "2-hour group session",
-      additionalDetails: "Limited to small groups for a personalized experience.",
+      basePrice: 60,
+      baseDuration: "2-hour offline session",
+      availability: "Scheduled dates only",
+      customizationOptions: [
+        {
+          name: "Additional Counselor",
+          description: "Include an additional expert for the session",
+          priceAdjustment: 40,
+          enabled: false,
+        },
+        {
+          name: "Session Recording",
+          description: "Receive a recording of the group session",
+          priceAdjustment: 20,
+          enabled: false,
+        },
+        {
+          name: "Extended Session",
+          description: "Add an extra hour to the session",
+          priceAdjustment: 30,
+          enabled: false,
+        },
+      ],
+      cta: "Join the Group",
+      link: "/book/group-counseling",
     },
     counselorSection: {
       heading: "Meet Your Counselor",
