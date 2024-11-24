@@ -5,9 +5,9 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <div className="bg-base-200 text-base-content p-10">
-      <footer className="container footer md:footer-">
-        <aside className="gap-0">
+    <div className="py-12 bg-base-200 text-base-content">
+      <footer className="container footer">
+        <aside>
           <Logo />
         </aside>
         <nav>
