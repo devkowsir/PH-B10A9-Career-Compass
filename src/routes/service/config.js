@@ -41,6 +41,7 @@ export const Services = [
     overviewSection: {
       heading: "Service Overview",
       subHeading: "Get personalized guidance to identify your strengths, interests, and goals.",
+      image: careerCounseling,
       description:
         "Our personalized career counseling sessions are designed to help you discover the right career path. Whether you're a student or a professional seeking guidance, our experts will work with you to create actionable career plans.",
       targetAudience: "Students, fresh graduates, professionals seeking guidance.",
@@ -125,6 +126,7 @@ export const Services = [
     overviewSection: {
       heading: "Service Overview",
       subHeading: "Make your resume stand out in the job market.",
+      image: resumeReview,
       description:
         "Our resume review service ensures your resume is polished and tailored to the industry you’re targeting. We optimize content, structure, and keywords to improve your chances of getting noticed.",
       targetAudience: "Job seekers, professionals switching careers.",
@@ -209,6 +211,7 @@ export const Services = [
     overviewSection: {
       heading: "Service Overview",
       subHeading: "Simulated interviews to boost your confidence and readiness.",
+      image: mockInterviews,
       description:
         "Our mock interview service replicates real-world interview scenarios to help you practice and gain confidence. Receive constructive feedback from industry experts to refine your answers, body language, and overall performance.",
       targetAudience: "Job seekers, professionals preparing for interviews, and students entering the workforce.",
@@ -295,6 +298,7 @@ export const Services = [
     overviewSection: {
       heading: "Service Overview",
       subHeading: "Interactive workshops to design your career roadmap.",
+      image: careerPlanningWorkshops,
       description:
         "Our career planning workshops provide hands-on guidance to help you set clear career goals and develop a strategic plan to achieve them. Collaborate with peers and experts in an engaging environment designed to empower you for success.",
       targetAudience: "Students, professionals planning career transitions, and aspiring leaders.",
@@ -382,6 +386,7 @@ export const Services = [
     overviewSection: {
       heading: "Service Overview",
       subHeading: "Evaluate your skills and unlock your potential.",
+      image: skillAssessments,
       description:
         "Our skill assessment tests are designed to provide an in-depth understanding of your abilities. Whether you're exploring new career opportunities or planning your professional growth, these assessments help identify your strengths and areas for improvement.",
       targetAudience: "Professionals, job seekers, and students exploring career options.",
@@ -469,6 +474,7 @@ export const Services = [
     overviewSection: {
       heading: "Service Overview",
       subHeading: "Explore career options through collaborative counseling.",
+      image: groupCounseling,
       description:
         "Our group counseling sessions provide a platform to share ideas, learn from others, and receive guidance in a collaborative setting. Join peers with similar goals and benefit from expert-led discussions.",
       targetAudience: "Students, professionals exploring options, and career changers.",

@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Hero from "./components/Hero";
+import Overview from "./components/Overview";
 import { Services } from "./config";
 
 const ServiceRoute = () => {
@@ -12,6 +13,7 @@ const ServiceRoute = () => {
   return (
     <>
       <Hero {...ServiceData.heroSection} />
+      <Overview {...ServiceData.overviewSection} />
     </>
   );
 };
