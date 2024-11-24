@@ -137,6 +137,26 @@ export const Services = [
       ctaButtonText: "Book Your Session Now",
       ctaButtonLink: "/book/career-counseling",
     },
+    faqsSection: {
+      heading: "Career Counseling FAQs",
+      subHeading: "Find answers to common questions about our career counseling sessions.",
+      faqs: [
+        {
+          question: "Who can benefit from career counseling?",
+          answer:
+            "Anyone seeking career guidance, including students, fresh graduates, and professionals looking to change or advance their careers.",
+        },
+        {
+          question: "How are the sessions conducted?",
+          answer: "Sessions are conducted online via video calls to provide convenience and flexibility.",
+        },
+        {
+          question: "What can I expect from a career counseling session?",
+          answer:
+            "You will receive personalized advice, actionable insights, and a clear career path based on your goals and strengths.",
+        },
+      ],
+    },
   },
   {
     slug: "resume-review",
@@ -243,6 +263,26 @@ export const Services = [
       subHeading: "Take the first step to land your dream job.",
       ctaButtonText: "Get Your Review Now",
       ctaButtonLink: "/book/resume-review",
+    },
+    faqsSection: {
+      heading: "Resume Review FAQs",
+      subHeading: "Get clarity on our resume review process and services.",
+      faqs: [
+        {
+          question: "How do I submit my resume for review?",
+          answer: "You can upload your resume during the booking process or email it to us after booking.",
+        },
+        {
+          question: "What does the review process include?",
+          answer:
+            "We analyze your resume for structure, content, ATS optimization, and industry relevance, providing actionable feedback.",
+        },
+        {
+          question: "How soon will I get my reviewed resume?",
+          answer:
+            "We typically return the reviewed resume within 2-3 business days unless express service is selected.",
+        },
+      ],
     },
   },
   {
@@ -352,6 +392,25 @@ export const Services = [
       subHeading: "Practice makes perfect. Schedule your mock interview today.",
       ctaButtonText: "Book Your Mock Interview",
       ctaButtonLink: "/book/mock-interviews",
+    },
+    faqsSection: {
+      heading: "Mock Interview FAQs",
+      subHeading: "Learn more about how our mock interview sessions work.",
+      faqs: [
+        {
+          question: "What types of interviews are covered?",
+          answer: "We cover behavioral, technical, and industry-specific interviews tailored to your job application.",
+        },
+        {
+          question: "Can I choose the interviewer’s industry expertise?",
+          answer: "Yes, you can request an interviewer with expertise in your target industry.",
+        },
+        {
+          question: "Will I receive feedback after the interview?",
+          answer:
+            "Yes, you will receive detailed feedback to improve your responses, body language, and overall performance.",
+        },
+      ],
     },
   },
   {
@@ -463,6 +522,25 @@ export const Services = [
       ctaButtonText: "Join the Workshop Now",
       ctaButtonLink: "/book/career-planning-workshops",
     },
+    faqsSection: {
+      heading: "Career Planning Workshop FAQs",
+      subHeading: "Get details about our career planning workshops.",
+      faqs: [
+        {
+          question: "What happens during the workshop?",
+          answer:
+            "The workshop includes hands-on activities, career mapping, and group discussions led by industry experts.",
+        },
+        {
+          question: "Do I need to prepare anything for the workshop?",
+          answer: "No prior preparation is required. Just bring an open mind and your enthusiasm to participate.",
+        },
+        {
+          question: "Are workshop materials provided?",
+          answer: "Yes, all attendees will receive workshop materials and resources to take home.",
+        },
+      ],
+    },
   },
   {
     slug: "skill-assessments",
@@ -573,6 +651,25 @@ export const Services = [
       ctaButtonText: "Take the Test Now",
       ctaButtonLink: "/book/skill-assessments",
     },
+    faqsSection: {
+      heading: "Skill Assessment FAQs",
+      subHeading: "Understand how our skill assessment tests can help you.",
+      faqs: [
+        {
+          question: "What skills are assessed?",
+          answer:
+            "Our assessments cover a wide range of skills, including technical, analytical, and soft skills relevant to various industries.",
+        },
+        {
+          question: "How long does the assessment take?",
+          answer: "Each assessment takes approximately 30 minutes to complete.",
+        },
+        {
+          question: "Will I receive a detailed report?",
+          answer: "Yes, you will get a comprehensive report with your results and recommendations for improvement.",
+        },
+      ],
+    },
   },
   {
     slug: "group-counseling",
@@ -682,6 +779,26 @@ export const Services = [
       subHeading: "Collaborate with peers and gain expert guidance.",
       ctaButtonText: "Book Your Spot Now",
       ctaButtonLink: "/book/group-counseling",
+    },
+    faqsSection: {
+      heading: "Group Counseling FAQs",
+      subHeading: "Find answers about our group counseling sessions.",
+      faqs: [
+        {
+          question: "What is the focus of group counseling?",
+          answer:
+            "Group counseling focuses on collaborative discussions to explore career options, share experiences, and gain diverse perspectives.",
+        },
+        {
+          question: "How many people are in each session?",
+          answer:
+            "Each group session typically includes 5-10 participants to ensure a productive and engaging environment.",
+        },
+        {
+          question: "Who facilitates the group sessions?",
+          answer: "Our group sessions are facilitated by experienced counselors skilled in managing group dynamics.",
+        },
+      ],
     },
   },
 ];
