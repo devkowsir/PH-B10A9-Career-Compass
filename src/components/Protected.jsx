@@ -7,7 +7,12 @@ const Protected = ({ children }) => {
   const { pathname } = useLocation();
   const { user, isLoading } = useAuthContext();
 
-  if (isLoading) return null;
+  if (isLoading)
+    return (
+      <div className="absolute inset-0 flex justify-center items-center">
+        <div className="loading loading-lg"></div>
+      </div>
+    );
   if (!user) return <Navigate to={`/login?redirectTo=${encodeURIComponent(pathname)}`} />;
 
   return children;

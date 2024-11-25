@@ -24,7 +24,7 @@ const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, c
   };
 
   return (
-    <section id="pricing" className="bg-base-200 py-12 text-base-content/80">
+    <section id="pricing" className="bg-base-200 py-12 text-base-content/80" data-aos="slide-up" data-aos-once>
       <div className="container">
         <h2 className="mb-2 text-4xl font-bold text-center">{heading}</h2>
         <p className="mb-6 text-center">{subHeading}</p>

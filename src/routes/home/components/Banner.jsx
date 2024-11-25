@@ -9,21 +9,19 @@ const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    // Automatically move to the next slide every 3 seconds
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slideCount);
     }, 3000);
 
-    // Clear the interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="relative aspect-[4/3] bg-black/60 lg:h-[768px] lg:aspect-[unset]">
-      <div className="absolute -z-10 isolate w-full h-full">
+    <section className="relative aspect-[4/3] lg:h-[768px] lg:aspect-[unset]" data-aos="fade" data-aos-once>
+      <div className="absolute inset-0 bg-black/60">
         {slides.map(({ image }, i) => (
           <img
-            className={`absolute w-full h-full object-cover transition-opacity duration-300 ${
+            className={`absolute -z-10 w-full h-full object-cover transition-opacity duration-300 ${
               currentSlide == i ? "opacity-100" : "opacity-0"
             }`}
             src={image}
@@ -31,7 +29,7 @@ const Banner = () => {
           ></img>
         ))}
       </div>
-      <div className="container h-full flex flex-col gap-2 justify-center items-center text-center">
+      <div className="container relative z-10 h-full flex flex-col gap-2 justify-center items-center text-center">
         <div className="shrink-0 relative w-full h-10 text-lg text-base-100 font-bold">
           {slides.map(({ caption }, i) => (
             <h2

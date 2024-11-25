@@ -2,7 +2,7 @@ import React from "react";
 
 const KeyFeatures = ({ heading, subHeading, features }) => {
   return (
-    <section id="key-features">
+    <section id="key-features" data-aos="slide-up" data-aos-once>
       <div className="container text-base-content/75 text-center">
         <h2 className="text-4xl font-bold text-center mb-2">{heading}</h2>
         <p className="text-lg text-center mb-12">{subHeading}</p>

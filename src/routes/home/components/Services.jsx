@@ -5,7 +5,12 @@ import { ServicesSection } from "../config";
 
 const Services = () => {
   return (
-    <section id="services" className="container mb-24 bg-base-100 text-base-content/75">
+    <section
+      id="services"
+      className="container mb-24 bg-base-100 text-base-content/75"
+      data-aos="slide-up"
+      data-aos-once
+    >
       <h2 className="text-4xl font-bold text-center mb-2">{ServicesSection.heading}</h2>
       <p className="text-lg text-center mb-12 text-base-content/75">{ServicesSection.subHeading}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
