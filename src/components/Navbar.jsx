@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar px-0">
           <div className="navbar-start">
-            <Logo className="[&>div]:hidden [&_.slogan]:hidden xs:[&>div]:flex sm:[&_.slogan]:inline" />
+            <Logo className="[&>div]:hidden [&_.slogan]:hidden xs:[&>div]:flex lg:[&_.slogan]:inline" />
           </div>
           <div className="navbar-center hidden md:flex">
             <ul className="menu md:menu-horizontal px-1">
@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
             {user ? (
               <>
-                <Link to={"/my-profile"} className="avatar tooltip tooltip-bottom" data-tip={user.displayName}>
+                <Link to={"/profile"} className="avatar tooltip tooltip-bottom" data-tip={user.displayName}>
                   <div className="w-8 rounded-full sm:w-12">
                     {user.photoURL ? (
                       <img src={user.photoURL} referrerPolicy="no-referrer" alt={user.displayName} />

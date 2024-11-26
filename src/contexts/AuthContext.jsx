@@ -55,16 +55,22 @@ export const AuthProvider = ({ children }) => {
     return unsubscribe;
   }, []);
 
-  const authContextData = { user: currentUser, isLoading, ...authMethods };
+  const reloadUser = () => {
+    setCurrentUser({
+      displayName: auth.currentUser.displayName,
+      email: auth.currentUser.email,
+      photoURL: auth.currentUser.photoURL,
+    });
+  };
+
+  const authContextData = { user: currentUser, isLoading, reloadUser, ...authMethods };
 
   return <AuthContext.Provider value={authContextData}>{children}</AuthContext.Provider>;
 };
 
 const authMethods = {
-  registerUser: ({ displayName, photoURL, email, password }) =>
-    createUserWithEmailAndPassword(auth, email, password).then(({ user }) => {
-      updateProfile(user, { displayName, photoURL });
-    }),
+  registerUser: ({ email, password }) => createUserWithEmailAndPassword(auth, email, password),
+  updateProfile: (data) => updateProfile(auth.currentUser, data),
   loginUser: ({ email, password }) => signInWithEmailAndPassword(auth, email, password),
   loginWithGoogle: () => signInWithPopup(auth, googleAuthProvider),
   sendPasswordResetEmail: (email) => sendPasswordResetEmail(auth, email),

@@ -11,7 +11,7 @@ export const isValidPhotoURL = async (url) => {
   if (typeof url !== "string") throw new Error("URL must be string");
 
   return new Promise((res, rej) => {
-    fetch(url)
+    fetch(url, { referrerPolicy: "no-referrer" })
       .then((response) => {
         if (!response.ok) return rej("Invalid URL");
         if (response.headers.get("content-type").startsWith("image/")) return res(true);

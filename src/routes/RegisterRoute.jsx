@@ -26,7 +26,8 @@ export const RegisterRoute = () => {
       if (!isValidEmail(email)) return;
       if (!isValidPassword(password)) return;
 
-      await registerUser({ displayName, photoURL, email, password });
+      await registerUser({ email, password });
+      await updateProfile({ displayName, photoURL });
 
       const searchParams = new URLSearchParams(location.search);
       let redirectTo = new URL(searchParams.get("redirectTo") ?? "/", window.location.origin).pathname;
