@@ -4,6 +4,7 @@ import Protected from "../components/Protected";
 import { LoginRoute } from "./LoginRoute";
 import ProfileRoute from "./ProfileRoute";
 import { RegisterRoute } from "./RegisterRoute";
+import ServicesRoute from "./ServicesRoute";
 import BookingsRoute from "./bookings";
 import HomeRoute from "./home";
 import ServiceRoute from "./service";
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "", element: <HomeRoute /> },
+      {
+        path: "/services",
+        element: <ServicesRoute />,
+      },
       { path: "/service/:slug", element: <Protected children={<ServiceRoute />} /> },
       { path: "/bookings", element: <Protected children={<BookingsRoute />} /> },
       { path: "/profile", element: <Protected children={<ProfileRoute />} /> },
