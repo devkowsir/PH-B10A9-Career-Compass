@@ -8,7 +8,7 @@ const Services = () => {
     <section
       id="services"
       className="container mb-24 bg-base-100 text-base-content/75"
-      data-aos="slide-up"
+      data-aos="fade-right"
       data-aos-once
     >
       <h2 className="text-4xl font-bold text-center mb-2">{ServicesSection.heading}</h2>

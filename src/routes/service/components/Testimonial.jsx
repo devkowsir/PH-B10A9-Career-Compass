@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = ({ heading, subHeading, testimonials }) => {
   return (
-    <section id="counselor" className="bg-base-200 py-12" data-aos="slide-up" data-aos-once>
+    <section id="counselor" className="bg-base-200 py-12" data-aos="fade-right" data-aos-once>
       <div className="container text-base-content/75 text-center">
         <h2 className="mb-2 text-4xl">{heading}</h2>
         <p className="mb-12 text-lg">{subHeading}</p>

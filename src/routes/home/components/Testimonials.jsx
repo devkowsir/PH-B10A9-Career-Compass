@@ -7,7 +7,7 @@ const Testimonials = () => {
       id="testimonials"
       className="mb-24 py-12 bg-base-100 text-base-content bg-cover"
       style={{ backgroundImage: `url(${TestimonialsSection.image})` }}
-      data-aos="slide-up"
+      data-aos="fade-left"
       data-aos-once
     >
       <div className="container bg-base-100/80 rounded-lg p-8">

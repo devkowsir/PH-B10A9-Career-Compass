@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       id="why-choose-us"
       className="my-24 py-12 bg-center bg-cover text-base-content md:py-16"
       style={{ backgroundImage: `url(${WhyChooseUsSection.image})` }}
-      data-aos="slide-up"
+      data-aos="fade-left"
       data-aos-once
     >
       <div className="container">

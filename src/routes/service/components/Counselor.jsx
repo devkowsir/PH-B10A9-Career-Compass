@@ -3,7 +3,7 @@ import { FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 const Counselor = ({ heading, subHeading, name, bio, image, socialMedia }) => {
   return (
-    <section id="counselor" data-aos="slide-up" data-aos-once>
+    <section id="counselor" data-aos="fade-left" data-aos-once>
       <div className="container text-base-content/75 text-center">
         <h2 className="mb-2 text-4xl">{heading}</h2>
         <p className="mb-12 text-lg">{subHeading}</p>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
-import CTA from "./components/CTA";
 import Counselor from "./components/Counselor";
 import FAQs from "./components/FAQs";
 import Hero from "./components/Hero";
@@ -21,11 +20,10 @@ const ServiceRoute = () => {
       <Hero {...ServiceData.heroSection} />
       <Overview {...ServiceData.overviewSection} />
       <KeyFeatures {...ServiceData.keyFeaturesSection} />
-      <Pricing {...ServiceData.pricingSection} />
       <Counselor {...ServiceData.counselorSection} />
       <Testimonials {...ServiceData.testimonialsSection} />
       <FAQs {...ServiceData.faqsSection} />
-      <CTA {...ServiceData.ctaSection} />
+      <Pricing {...ServiceData.pricingSection} />
     </>
   );
 };
