@@ -30,6 +30,9 @@ const Navbar = () => {
                   ))}
                 </ul>
               </li>
+              <li>
+                <NavLink to={"/bookings"}>Bookings</NavLink>
+              </li>
             </ul>
           </div>
           <div className="navbar-end gap-2">
@@ -50,6 +53,9 @@ const Navbar = () => {
                       </li>
                     ))}
                   </ul>
+                </li>
+                <li>
+                  <NavLink to={"/bookings"}>Bookings</NavLink>
                 </li>
               </ul>
             </div>

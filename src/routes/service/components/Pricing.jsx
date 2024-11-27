@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Confirmation from "./Confirmation";
 
 const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, customizationOptions, cta }) => {
+  const { slug } = useParams();
   const [customizations, setCustomizations] = useState(
     customizationOptions.map((option) => ({
       ...option,
@@ -22,6 +24,15 @@ const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, c
       prev.map((option, i) => (i === index ? { ...option, enabled: !option.enabled } : option))
     );
   };
+
+  useEffect(() => {
+    setCustomizations(
+      customizationOptions.map((option) => ({
+        ...option,
+        enabled: false,
+      }))
+    );
+  }, [slug]);
 
   return (
     <section id="pricing" className="bg-base-200 py-12 text-base-content/80" data-aos="fade-right" data-aos-once>

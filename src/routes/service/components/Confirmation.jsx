@@ -8,7 +8,7 @@ import { Services } from "../config";
 const Confirmation = ({ customizations, toggleOption, calculateTotalPrice }) => {
   const { slug } = useParams();
   const [_, setBookings] = useLocalStorage({ key: "bookings", initial: [] });
-  const minDate = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+  const minDate = new Date(Date.now()).toISOString().split("T")[0];
 
   /** @type {React.FormEventHandler<SubmitEvent>} */
   const handleSubmit = (e) => {
@@ -19,16 +19,16 @@ const Confirmation = ({ customizations, toggleOption, calculateTotalPrice }) => 
     } = Services.find((service) => slug == service.slug);
 
     setBookings((curr) => [
-      ...curr,
       {
-        title,
+        title: title.slice(0, -1), // singularize title from "Sessions" to "Session"
         image,
         counselor,
         date: e.target.date.value,
         time: e.target.time.value.padStart(2, "0"),
-        customizations: customizations.filter(({ enabled }) => enabled).map(({ name }) => name),
+        customizations: customizations.map(({ name, enabled }) => ({ name, enabled })),
         totalPrice: calculateTotalPrice(),
       },
+      ...curr,
     ]);
 
     toast("Service has been booked successfully.", { type: "success" });
