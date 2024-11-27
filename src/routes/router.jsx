@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Protected from "../components/Protected";
 import { LoginRoute } from "./LoginRoute";
+import NotFoundRoute from "./NotFoundRoute";
 import ProfileRoute from "./ProfileRoute";
 import { RegisterRoute } from "./RegisterRoute";
 import ServicesRoute from "./ServicesRoute";
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       { path: "/service/:slug", element: <Protected children={<ServiceRoute />} /> },
       { path: "/bookings", element: <Protected children={<BookingsRoute />} /> },
       { path: "/profile", element: <Protected children={<ProfileRoute />} /> },
-      { path: "*", element: <div>Not Found</div> },
+      { path: "*", element: <NotFoundRoute /> },
     ],
   },
   {
