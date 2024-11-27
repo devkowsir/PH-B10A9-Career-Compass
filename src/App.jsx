@@ -1,6 +1,6 @@
 import Aos from "aos";
 import { useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { useAuthContext } from "./contexts/AuthContext";
@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollRestoration />
       <Navbar />
       <main className="relative pb-24 flex-grow space-y-24 *:scroll-mt-28 overflow-hidden">
         <Outlet />

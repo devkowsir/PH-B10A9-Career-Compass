@@ -21,7 +21,7 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li className="dropdown dropdown-hover">
-                <NavLink to={"/service"}>Service</NavLink>
+                <Link to={"#services"}>Services</Link>
                 <ul className="dropdown-content menu z-[2] p-2 ml-0 *:w-max bg-base-100 rounded-box shadow">
                   {ServiceLinks.map(({ slug, shortName }) => (
                     <li key={slug}>
@@ -42,7 +42,7 @@ const Navbar = () => {
                   <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/service"}>Service</NavLink>
+                  <Link to={"#services"}>Services</Link>
                   <ul className="menu menu-sm pt-0 w-max before:top-1">
                     {ServiceLinks.map(({ slug, shortName }) => (
                       <li key={slug}>

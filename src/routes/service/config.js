@@ -39,7 +39,6 @@ export const Services = [
       subHeading: "Discover the career path that suits you best!",
       image: careerCounseling,
       ctaText: "Book Now",
-      ctaLink: "/book/career-counseling",
     },
     overviewSection: {
       heading: "Service Overview",
@@ -97,7 +96,6 @@ export const Services = [
         },
       ],
       cta: "Book This Service",
-      link: "/book/career-counseling",
     },
     counselorSection: {
       heading: "Meet Your Counselor",
@@ -131,12 +129,6 @@ export const Services = [
         },
       ],
     },
-    ctaSection: {
-      heading: "Ready to Discover Your Path?",
-      subHeading: "Take the first step toward a brighter future.",
-      ctaButtonText: "Book Your Session Now",
-      ctaButtonLink: "/book/career-counseling",
-    },
     faqsSection: {
       heading: "Career Counseling FAQs",
       subHeading: "Find answers to common questions about our career counseling sessions.",
@@ -166,7 +158,6 @@ export const Services = [
       subHeading: "Optimize your resume for better opportunities and career growth.",
       image: resumeReview,
       ctaText: "Get Feedback",
-      ctaLink: "/book/resume-review",
     },
     overviewSection: {
       heading: "Service Overview",
@@ -224,7 +215,6 @@ export const Services = [
         },
       ],
       cta: "Book This Service",
-      link: "/book/resume-review",
     },
     counselorSection: {
       heading: "Meet Your Expert",
@@ -258,12 +248,6 @@ export const Services = [
         },
       ],
     },
-    ctaSection: {
-      heading: "Want Your Resume to Shine?",
-      subHeading: "Take the first step to land your dream job.",
-      ctaButtonText: "Get Your Review Now",
-      ctaButtonLink: "/book/resume-review",
-    },
     faqsSection: {
       heading: "Resume Review FAQs",
       subHeading: "Get clarity on our resume review process and services.",
@@ -293,7 +277,6 @@ export const Services = [
       subHeading: "Ace your next interview with confidence and preparation.",
       image: mockInterviews,
       ctaText: "Schedule Now",
-      ctaLink: "/book/mock-interviews",
     },
     overviewSection: {
       heading: "Service Overview",
@@ -351,7 +334,6 @@ export const Services = [
         },
       ],
       cta: "Book This Service",
-      link: "/book/mock-interviews",
     },
     counselorSection: {
       heading: "Meet Your Interview Coach",
@@ -387,12 +369,6 @@ export const Services = [
         },
       ],
     },
-    ctaSection: {
-      heading: "Ready to Nail Your Next Interview?",
-      subHeading: "Practice makes perfect. Schedule your mock interview today.",
-      ctaButtonText: "Book Your Mock Interview",
-      ctaButtonLink: "/book/mock-interviews",
-    },
     faqsSection: {
       heading: "Mock Interview FAQs",
       subHeading: "Learn more about how our mock interview sessions work.",
@@ -421,7 +397,6 @@ export const Services = [
       subHeading: "Strategize your career with expert-led workshops.",
       image: careerPlanningWorkshops,
       ctaText: "Join Now",
-      ctaLink: "/book/career-planning-workshops",
     },
     overviewSection: {
       heading: "Service Overview",
@@ -479,7 +454,6 @@ export const Services = [
         },
       ],
       cta: "Book This Service",
-      link: "/book/career-planning-workshops",
     },
     counselorSection: {
       heading: "Meet Your Workshop Leader",
@@ -516,12 +490,6 @@ export const Services = [
         },
       ],
     },
-    ctaSection: {
-      heading: "Ready to Plan Your Dream Career?",
-      subHeading: "Take the first step toward a successful future.",
-      ctaButtonText: "Join the Workshop Now",
-      ctaButtonLink: "/book/career-planning-workshops",
-    },
     faqsSection: {
       heading: "Career Planning Workshop FAQs",
       subHeading: "Get details about our career planning workshops.",
@@ -550,7 +518,6 @@ export const Services = [
       subHeading: "Identify your strengths and areas for improvement.",
       image: skillAssessments,
       ctaText: "Take the Test",
-      ctaLink: "/book/skill-assessments",
     },
     overviewSection: {
       heading: "Service Overview",
@@ -608,7 +575,6 @@ export const Services = [
         },
       ],
       cta: "Take the Test",
-      link: "/book/skill-assessments",
     },
     counselorSection: {
       heading: "Meet Your Assessment Guide",
@@ -645,12 +611,6 @@ export const Services = [
         },
       ],
     },
-    ctaSection: {
-      heading: "Ready to Assess Your Skills?",
-      subHeading: "Take the first step to understanding your potential.",
-      ctaButtonText: "Take the Test Now",
-      ctaButtonLink: "/book/skill-assessments",
-    },
     faqsSection: {
       heading: "Skill Assessment FAQs",
       subHeading: "Understand how our skill assessment tests can help you.",
@@ -679,7 +639,6 @@ export const Services = [
       subHeading: "Collaborate and grow with peers in a supportive environment.",
       image: groupCounseling,
       ctaText: "Join a Session",
-      ctaLink: "/book/group-counseling",
     },
     overviewSection: {
       heading: "Service Overview",
@@ -737,7 +696,6 @@ export const Services = [
         },
       ],
       cta: "Join the Group",
-      link: "/book/group-counseling",
     },
     counselorSection: {
       heading: "Meet Your Counselor",
@@ -773,12 +731,6 @@ export const Services = [
           image: testimonial_3,
         },
       ],
-    },
-    ctaSection: {
-      heading: "Ready to Join a Group Session?",
-      subHeading: "Collaborate with peers and gain expert guidance.",
-      ctaButtonText: "Book Your Spot Now",
-      ctaButtonLink: "/book/group-counseling",
     },
     faqsSection: {
       heading: "Group Counseling FAQs",

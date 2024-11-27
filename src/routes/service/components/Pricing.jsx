@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
-const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, customizationOptions, cta, link }) => {
+const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, customizationOptions, cta }) => {
   const [customizations, setCustomizations] = useState(
     customizationOptions.map((option) => ({
       ...option,
@@ -54,10 +53,13 @@ const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, c
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <Link to={link} className="btn btn-primary">
+        <div className="mt-8 text-center">
+          <button
+            className="btn btn-primary btn-lg mt-8"
+            onClick={() => document.getElementById("service-confirm-modal").showModal()}
+          >
             {cta}
-          </Link>
+          </button>
         </div>
       </div>
     </section>
