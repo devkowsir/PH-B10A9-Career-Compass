@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Confirmation from "./Confirmation";
 
 const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, customizationOptions, cta }) => {
   const [customizations, setCustomizations] = useState(
@@ -62,6 +63,11 @@ const Pricing = ({ heading, subHeading, basePrice, baseDuration, availability, c
           </button>
         </div>
       </div>
+      <Confirmation
+        customizations={customizations}
+        calculateTotalPrice={calculateTotalPrice}
+        toggleOption={toggleOption}
+      />
     </section>
   );
 };

@@ -30,6 +30,22 @@ import recommendationsIcon from "../../assets/images/recommendations-icon.png";
 import tipsIcon from "../../assets/images/tips-icon.png";
 import trackingSystemIcon from "../../assets/images/tracking-system-icon.png";
 
+export const BookingTimes = [
+  { time: "8:00 AM" },
+  { time: "9:00 AM" },
+  { time: "10:00 AM" },
+  { time: "11:00 AM" },
+  { time: "12:00 PM" },
+  { time: "1:00 PM" },
+  { time: "2:00 PM" },
+  { time: "3:00 PM" },
+  { time: "4:00 PM" },
+  { time: "5:00 PM" },
+  { time: "6:00 PM" },
+  { time: "7:00 PM" },
+  { time: "8:00 PM" },
+];
+
 export const Services = [
   {
     slug: "career-counseling",
