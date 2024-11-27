@@ -50,6 +50,7 @@ export const Services = [
   {
     slug: "career-counseling",
     title: "Career Counseling Sessions",
+    category: "Offline",
     heroSection: {
       heading: "Career Counseling Sessions",
       subHeading: "Discover the career path that suits you best!",
@@ -169,6 +170,7 @@ export const Services = [
   {
     slug: "resume-review",
     title: "Resume Reviews",
+    category: "Online",
     heroSection: {
       heading: "Resume Reviews",
       subHeading: "Optimize your resume for better opportunities and career growth.",
@@ -288,6 +290,7 @@ export const Services = [
   {
     slug: "mock-interviews",
     title: "Mock Interviews",
+    category: "Group",
     heroSection: {
       heading: "Mock Interviews",
       subHeading: "Ace your next interview with confidence and preparation.",
@@ -408,6 +411,7 @@ export const Services = [
   {
     slug: "career-planning-workshops",
     title: "Career Planning Workshops",
+    category: "Offline",
     heroSection: {
       heading: "Career Planning Workshops",
       subHeading: "Strategize your career with expert-led workshops.",
@@ -529,6 +533,7 @@ export const Services = [
   {
     slug: "skill-assessments",
     title: "Skill Assessment Tests",
+    category: "Online",
     heroSection: {
       heading: "Skill Assessment Tests",
       subHeading: "Identify your strengths and areas for improvement.",
@@ -650,6 +655,7 @@ export const Services = [
   {
     slug: "group-counseling",
     title: "Group Counseling Sessions",
+    category: "Group",
     heroSection: {
       heading: "Group Counseling Sessions",
       subHeading: "Collaborate and grow with peers in a supportive environment.",

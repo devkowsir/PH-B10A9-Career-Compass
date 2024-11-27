@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import { ServiceLinks } from "../config";
 import Logo from "./Logo";
 
@@ -8,43 +9,58 @@ const Footer = () => {
     <div className="py-12 bg-base-200 text-base-content">
       <footer className="container footer">
         <aside>
-          <Logo />
+          <Logo className="[&>div>.slogan]:hidden lg:[&>div>.slogan]:inline" />
         </aside>
         <nav>
-          <h6 className="footer-title">Services</h6>
-          {ServiceLinks.map(({ slug, shortName }) => (
-            <a className="link link-hover" href={`/service/${slug}`} key={slug}>
-              {shortName}
-            </a>
-          ))}
+          <h6 className="footer-title">Pages</h6>
+          <Link className="link link-hover" to={"/"}>
+            Home
+          </Link>
+          <Link className="link link-hover" to={"/services"}>
+            Services
+          </Link>
+          <Link className="link link-hover" to={"/bookings"}>
+            Bookings
+          </Link>
+          <Link className="link link-hover" to={"/profile"}>
+            Profile
+          </Link>
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <a className="link link-hover" href={"/#why-choose-us"}>
+          <Link className="link link-hover" to={"/#why-choose-us"}>
             Why Choose Us
-          </a>
-          <a className="link link-hover" href={"/#services"}>
+          </Link>
+          <Link className="link link-hover" to={"/#services"}>
             Services
-          </a>
-          <a className="link link-hover" href={"/#testimonials"}>
+          </Link>
+          <Link className="link link-hover" to={"/#testimonials"}>
             Testimonials
-          </a>
-          <a className="link link-hover" href={"/#faqs"}>
+          </Link>
+          <Link className="link link-hover" to={"/#faqs"}>
             FAQs
-          </a>
+          </Link>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          {ServiceLinks.map(({ slug, shortName }) => (
+            <Link className="link link-hover" to={`/service/${slug}`} key={slug}>
+              {shortName}
+            </Link>
+          ))}
         </nav>
         <nav>
           <h6 className="footer-title">Social</h6>
-          <div className="grid grid-flow-col gap-4">
-            <a target="_blank">
+          <div className="flex gap-4 md:flex-col lg:flex-row">
+            <Link target="_blank">
               <FaTwitter className="text-2xl" />
-            </a>
-            <a target="_blank">
+            </Link>
+            <Link target="_blank">
               <FaYoutube className="text-2xl" />
-            </a>
-            <a target="_blank">
+            </Link>
+            <Link target="_blank">
               <FaFacebook className="text-2xl" />
-            </a>
+            </Link>
           </div>
         </nav>
       </footer>

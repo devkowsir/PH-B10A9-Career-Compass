@@ -13,7 +13,7 @@ const Protected = ({ children }) => {
         <div className="loading loading-lg"></div>
       </div>
     );
-  if (!user) return <Navigate to={`/login?redirectTo=${encodeURIComponent(pathname)}`} />;
+  if (!user) return <Navigate to={`/login?redirectTo=${encodeURIComponent(pathname)}`} replace />;
 
   return children;
 };

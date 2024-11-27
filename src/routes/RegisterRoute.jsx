@@ -9,7 +9,7 @@ import { isValidEmail, isValidName, isValidPassword, isValidPhotoURL } from "../
 export const RegisterRoute = () => {
   const navigate = useNavigate();
   const [isPasswordShown, setIsPasswordShown] = useState(false);
-  const { registerUser } = useAuthContext();
+  const { registerUser, updateProfile, reloadUser, loginWithGoogle } = useAuthContext();
 
   /** @type {React.FormEventHandler<HTMLFormElement>} */
   const handleSubmit = async (e) => {
@@ -28,6 +28,7 @@ export const RegisterRoute = () => {
 
       await registerUser({ email, password });
       await updateProfile({ displayName, photoURL });
+      reloadUser();
 
       const searchParams = new URLSearchParams(location.search);
       let redirectTo = new URL(searchParams.get("redirectTo") ?? "/", window.location.origin).pathname;
@@ -105,7 +106,7 @@ export const RegisterRoute = () => {
       </button>
       <p className="text-center">
         Already have an account?{" "}
-        <Link className="text-accent" to={{ pathname: "/login" }}>
+        <Link className="text-accent" to={{ pathname: "/login" }} replace>
           Login
         </Link>
       </p>

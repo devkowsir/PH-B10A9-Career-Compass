@@ -104,7 +104,7 @@ export const LoginRoute = () => {
       </button>
       <p className="text-center">
         Don't have an account?{" "}
-        <Link className="text-accent" to={{ pathname: "/register" }}>
+        <Link className="text-accent" to={{ pathname: "/register" }} replace>
           Register
         </Link>
       </p>

@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="mb-24 py-12 bg-base-100 text-base-content bg-cover"
+      className="py-12 text-base-content bg-cover"
       style={{ backgroundImage: `url(${TestimonialsSection.image})` }}
       data-aos="fade-left"
       data-aos-once

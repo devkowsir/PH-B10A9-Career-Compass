@@ -16,7 +16,7 @@ const ProfileRoute = () => {
     setFormState((state) => ({ ...state, fields: { ...state.fields, [e.target.name]: e.target.value } }));
 
   const isDirty =
-    formState.fields.name.trim() != user.displayName || formState.fields["photo-url"].trim() != user.photoURL;
+    formState.fields.name?.trim() != user.displayName || formState.fields["photo-url"]?.trim() != user.photoURL;
 
   /** @type {React.FormEventHandler<HTMLFormElement>} */
   const handleSubmit = async (e) => {
@@ -83,7 +83,7 @@ const ProfileRoute = () => {
                     type="text"
                     name="name"
                     placeholder="Name"
-                    value={formState.fields.name}
+                    value={formState.fields.name ?? ""}
                     onChange={handleChange}
                     className="w-full"
                   />
@@ -94,7 +94,7 @@ const ProfileRoute = () => {
                     type="text"
                     name="photo-url"
                     placeholder="Photo URL"
-                    value={formState.fields["photo-url"]}
+                    value={formState.fields["photo-url"] ?? ""}
                     onChange={handleChange}
                     className="w-full"
                   />
