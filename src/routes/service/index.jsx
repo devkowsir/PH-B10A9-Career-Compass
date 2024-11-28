@@ -13,7 +13,14 @@ const ServiceRoute = () => {
   const { slug } = useParams();
   const ServiceData = Services.find((service) => slug == service.slug);
 
-  if (!ServiceData) return <Navigate to={"/service-not-found"} replace />;
+  if (!ServiceData) {
+    const searchParams = new URLSearchParams({
+      "main-label": "OOPS! Service Not FOUND",
+      "btn-label": "Check Out Our Services",
+      link: "/services",
+    });
+    return <Navigate to={`/not-found?${searchParams.toString()}`} replace />;
+  }
 
   return (
     <>

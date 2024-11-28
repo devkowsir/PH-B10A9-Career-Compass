@@ -16,24 +16,16 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "", element: <HomeRoute /> },
-      {
-        path: "/services",
-        element: <ServicesRoute />,
-      },
+      { path: "/services", element: <ServicesRoute /> },
       { path: "/service/:slug", element: <Protected children={<ServiceRoute />} /> },
       { path: "/bookings", element: <Protected children={<BookingsRoute />} /> },
       { path: "/profile", element: <Protected children={<ProfileRoute />} /> },
+      { path: "/not-found", element: <NotFoundRoute /> },
       { path: "*", element: <NotFoundRoute /> },
     ],
   },
-  {
-    path: "/login",
-    element: <LoginRoute />,
-  },
-  {
-    path: "/register",
-    element: <RegisterRoute />,
-  },
+  { path: "/login", element: <LoginRoute /> },
+  { path: "/register", element: <RegisterRoute /> },
 ]);
 
 export default router;
