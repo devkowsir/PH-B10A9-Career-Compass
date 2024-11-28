@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
+import { SiteName } from "../home/config";
 import Counselor from "./components/Counselor";
 import FAQs from "./components/FAQs";
 import Hero from "./components/Hero";
@@ -21,6 +22,10 @@ const ServiceRoute = () => {
     });
     return <Navigate to={`/not-found?${searchParams.toString()}`} replace />;
   }
+
+  useEffect(() => {
+    document.title = `${SiteName} | ${ServiceData.title}`;
+  }, [slug]);
 
   return (
     <>

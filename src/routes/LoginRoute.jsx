@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaEnvelope, FaEye, FaEyeSlash, FaGoogle, FaKey } from "react-icons/fa6";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Logo from "../components/Logo";
+import { SiteName } from "../config";
 import { useAuthContext } from "../contexts/AuthContext";
 import { isValidEmail, isValidPassword } from "../utils/input-validators";
 
@@ -60,6 +61,10 @@ export const LoginRoute = () => {
       else console.error(error);
     }
   };
+
+  useEffect(() => {
+    document.title = `${SiteName} | ${mode[0].toUpperCase() + mode.slice(1)}`;
+  }, [mode]);
 
   return (
     <div className="container min-h-screen flex flex-col justify-center items-center text-base-content/75 sm:max-w-screen-xs">

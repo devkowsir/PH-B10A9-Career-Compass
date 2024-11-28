@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaEnvelope, FaEye, FaEyeSlash, FaGoogle, FaImage, FaKey, FaUser } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Logo from "../components/Logo";
+import { SiteName } from "../config";
 import { useAuthContext } from "../contexts/AuthContext";
 import { isValidEmail, isValidName, isValidPassword, isValidPhotoURL } from "../utils/input-validators";
 
@@ -61,6 +62,10 @@ export const RegisterRoute = () => {
       else console.error(error);
     }
   };
+
+  useEffect(() => {
+    document.title = `${SiteName} | Register`;
+  }, []);
 
   return (
     <div className="container min-h-screen flex flex-col justify-center items-center text-base-content/75 sm:max-w-screen-xs">

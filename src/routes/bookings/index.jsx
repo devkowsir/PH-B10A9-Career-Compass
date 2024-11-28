@@ -1,8 +1,10 @@
 import React from "react";
-import { useLocalStorage } from "../../hooks/use-local-storage";
-import { FaCheck, FaCross, FaPlus } from "react-icons/fa6";
-import { friendlyDaysCount } from "../../utils/friendly-days-count";
+import { FaCheck, FaPlus } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useLocalStorage } from "../../hooks/use-local-storage";
+import { friendlyDaysCount } from "../../utils/friendly-days-count";
+import { useEffect } from "react";
+import { SiteName } from "../home/config";
 
 const getBookingStatus = (date, time) => {
   const currDate = Date.now();
@@ -14,7 +16,11 @@ const getBookingStatus = (date, time) => {
 };
 
 const BookingsRoute = () => {
-  const [bookings, setBookings] = useLocalStorage({ key: "bookings", initial: [] });
+  const [bookings] = useLocalStorage({ key: "bookings", initial: [] });
+
+  useEffect(() => {
+    document.title = `${SiteName} | Bookings`;
+  }, []);
 
   return (
     <section className="container pt-12 text-base-content/75">

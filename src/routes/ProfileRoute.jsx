@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaImage, FaUser } from "react-icons/fa6";
 import { toast } from "react-toastify";
+import { SiteName } from "../config";
 import { useAuthContext } from "../contexts/AuthContext";
 import { isValidName, isValidPhotoURL } from "../utils/input-validators";
 
@@ -49,6 +50,10 @@ const ProfileRoute = () => {
   useEffect(() => {
     setFormState((state) => ({ ...state, fields: { name: user.displayName, "photo-url": user.photoURL } }));
   }, [user]);
+
+  useEffect(() => {
+    document.title = `${SiteName} | Profile`;
+  }, []);
 
   return (
     <section className="pt-24">

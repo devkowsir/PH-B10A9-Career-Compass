@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Rating } from "../components/Rating";
+import { SiteName } from "../config";
 import { ServicesSection } from "./home/config";
 
 const ServicesRoute = () => {
+  useEffect(() => {
+    document.title = `${SiteName} | Services`;
+  }, []);
+
   return (
     <section id="services" className="container pt-12 text-base-content/75" data-aos="fade" data-aos-once>
       <h2 className="text-4xl font-bold text-center mb-2">{ServicesSection.heading}</h2>
